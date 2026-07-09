@@ -1,51 +1,44 @@
 # Digital Clock
 
-A real-time digital clock built with vanilla HTML, CSS, and JavaScript. Displays the current time with a clean, minimal interface.
+A real-time digital clock built with vanilla HTML, CSS, and JavaScript. Displays the current time in a clean, minimal interface â€” no libraries, no dependencies.
 
 ## Features
 
-- Live time display — updates every second
-- Shows hours, minutes, and seconds
-- Zero-padded for consistent formatting
-- No dependencies — pure HTML/CSS/JS
+- Live time display updating every second
+- Shows hours, minutes, and seconds with zero-padding
+- Lightweight â€” pure HTML / CSS / JavaScript
+- Works in any modern browser without a build step
 
 ## Tech Stack
 
 | Layer | Technology |
-|-------|-----------|
+|-------|------------|
 | Structure | HTML5 |
 | Styling | CSS3 |
 | Logic | JavaScript (`Date`, `setInterval`) |
 
 ## Getting Started
 
-```bash
+`ash
 git clone https://github.com/Gdhanush-13/Digital-Clock.git
 cd Digital-Clock
-```
+`
 
-Open `index.html` in any modern browser — no build step needed.
+Open **index.html** directly in your browser â€” no server needed.
 
 ## Project Structure
 
-```
+`
 Digital-Clock/
-├── index.html   # Clock markup
-├── style.css    # Clock styling
-└── main.js      # Time logic
-```
+â”œâ”€â”€ index.html   # Clock markup
+â”œâ”€â”€ style.css    # Clock styling
+â””â”€â”€ main.js      # Time logic (Date + setInterval)
+`
 
 ## How It Works
 
-```js
-setInterval(() => {
-  const now = new Date();
-  // extract hours, minutes, seconds and update the DOM
-}, 1000);
-```
-
-The `Date` object provides the current time; `setInterval` refreshes the display every 1 000 ms.
+Every 1 000 ms, JavaScript reads the current time from `new Date()`, extracts hours/minutes/seconds, pads them to two digits, and writes them into the DOM.
 
 ## License
 
-MIT — free to use and modify.
+MIT â€” free to use and modify.
